@@ -49,7 +49,7 @@ async def func(ctx, arg1, arg2):
 
 # API integration and command
 
-AIclient = OpenAI(api_key='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')
+AIclient = OpenAI(api_key='YOUR API HERE')
 
 @client.command(name = 'gpt')
 async def func(message, *args): 
