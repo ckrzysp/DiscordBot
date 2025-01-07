@@ -49,7 +49,7 @@ async def func(ctx, arg1, arg2):
 
 # API integration and command
 
-AIclient = OpenAI(api_key='YOUR API HERE')
+AIclient = OpenAI(api_key='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')
 
 @client.command(name = 'gpt')
 async def func(message, *args): 
@@ -58,7 +58,7 @@ async def func(message, *args):
         model="gpt-4o",
         messages=[
             {"role": "system", 
-             "content": "Find me youtube video links. You will be asked ONLY provide a youtube link based on the information given. Make sure the content is accessible."},
+             "content": "You know about everything. You have amazing knowledge, give detailed responses! LIMIT YOUR RESPONSE TO 100 WORDS."},
             {
                 "role": "user",
                 "content": words
@@ -113,35 +113,35 @@ FFMPEG_OPTIONS = {
 ytdl = youtube_dl.YoutubeDL(YTDL_OPTIONS)
 
 @client.command(name = 'play', pass_context = True)
-async def func(ctx, url: str):
-    # Plays Men At Work - Down Under
-    # https://www.youtube.com/watch?v=EeeBH294v6I&list=RDEeeBH294v6I&start_radio=1
-
-    info = ytdl.extract_info(url, download=False)
+async def func(ctx, *arg):
+    # Using ChatGPT to find most appropriate search based on given input
+    words = ' '.join(arg)
+    completion = AIclient.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", 
+             "content": "Find me VALID and DOWNLOADABLE youtube video links. You will be asked ONLY provide a youtube link based on the information given. Make sure the content is accessible. ONLY PROVIDE YOUTUBE LINKS"},
+            {
+                "role": "user",
+                "content": words
+            }
+    ]
+    )
+    await ctx.send(completion.choices[0].message.content)
+    info = ytdl.extract_info(completion.choices[0].message.content, download=False)
     url2 = info['url']
-    print(url2)
-    client.voice_clients[0].play(discord.FFmpegPCMAudio(source=url2, **FFMPEG_OPTIONS), 
-                                 after=lambda e: print("Finished playing"))
-    
-@client.command(name = 'pt', pass_context = True)
-async def func(ctx):
-    # Plays Men At Work - Down Under
-    # https://www.youtube.com/watch?v=EeeBH294v6I&list=RDEeeBH294v6I&start_radio=1
-
-    client.voice_clients[0].play(discord.FFmpegPCMAudio(source='BG.mp3', 
-                                                        executable='C:/ffmpeg/bin/ffmpeg.exe'))
+    client.voice_clients[0].play(discord.FFmpegPCMAudio(source=url2, **FFMPEG_OPTIONS), after=lambda e: print("Finished playing"))
+    # client.voice_clients[0].play(discord.FFmpegPCMAudio(source=url2, **FFMPEG_OPTIONS), after=lambda e: print("Finished playing"))
 
 @client.command(name = 'p', pass_context = True)
 async def func(ctx):
     # Pause current track
-    client.voice_clients[0].pause();
+    client.voice_clients[0].pause()
 
 @client.command(name = 'r', pass_context = True)
 async def func(ctx):
     # Resume current track
-    client.voice_clients[0].resume();
-
-    
+    client.voice_clients[0].resume()
 
 # // RUN //
 token = bottoken
