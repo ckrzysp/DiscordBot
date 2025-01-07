@@ -1,8 +1,7 @@
 # API
-# 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
 
 from openai import OpenAI
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='YOUR KEY HERE')
 
 inp = ""
 while inp != "exit":
