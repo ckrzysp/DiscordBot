@@ -10,6 +10,10 @@ This Discord Bot utilizes the ChatGPT API and YouTube's YTDL libraries to allow 
 
 
 
+https://github.com/user-attachments/assets/efdf81e4-442b-42d3-845a-b493d35647db
+
+
+
 ### Future Updates
 
 #### Voice control aspects
