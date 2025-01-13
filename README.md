@@ -12,9 +12,7 @@ The video takes less than a minute to load.
 
 https://github.com/user-attachments/assets/efdf81e4-442b-42d3-845a-b493d35647db
 
-
-
-### Future Updates
+### Future Updates [Look for 'READMEUPDATE.md']
 
 #### Voice control aspects
 
