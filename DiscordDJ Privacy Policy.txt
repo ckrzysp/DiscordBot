@@ -1,0 +1,24 @@
+Privacy Policy for DiscordDJ
+Last Updated: 1/13/2024
+
+1. Data I Collect
+DiscordDJ only collects minimal data necessary to function effectively, such as:
+
+Server IDs
+User commands
+No personal or sensitive information is collected.
+
+2. How I Use Data
+The data collected is used to:
+
+Process commands and provide bot functionality.
+Ensure stable performance.
+
+3. Data Sharing
+I do not share, sell, or disclose your data to third parties.
+
+4. Data Retention
+Data is stored temporarily and is automatically deleted after use.
+
+5. Contact Us
+For any concerns or questions about this policy, contact me at pawluschristopher@gmail.com

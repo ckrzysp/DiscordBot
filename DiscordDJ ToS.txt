@@ -1,0 +1,64 @@
+Terms of Service for DiscordDJLast Updated: 1/13/2024
+
+Welcome to DiscordDJ! By using this bot, you agree to these Terms of Service ("ToS"). If you do not agree with these terms, please do not use the bot.
+
+1. Description of Service
+
+DiscordDJ is a music bot designed for Discord servers, allowing users to stream audio content, manage playlists, and interact with music-related features.
+
+2. Eligibility
+
+To use DiscordDJ, you must:
+
+Be at least 13 years old or comply with Discord's minimum age requirements.
+
+Have the necessary permissions in your server to add and manage bots.
+
+3. Acceptable Use
+
+When using DiscordDJ, you agree to:
+
+Comply with Discord’s Terms of Service and Community Guidelines.
+
+Refrain from using the bot to infringe on copyrights or intellectual property rights.
+
+Avoid using the bot for malicious activities, such as spamming, harassment, or any behavior that disrupts other users.
+
+4. Intellectual Property
+
+DiscordDJ, including its code, design, and features, is the intellectual property of Krzysio (chrisoso).
+
+Any third-party music or content streamed through the bot remains the property of its respective owners.
+
+5. Data Collection and Privacy
+
+DiscordDJ may collect minimal data, such as server IDs and user commands, to operate effectively.
+
+No personal data is stored, shared, or sold to third parties.
+
+Refer to our Privacy Policy for more details.
+
+6. Limitations and Liability
+
+DiscordDJ is provided "as-is" without warranties of any kind.
+
+I am not responsible for any harm, data loss, or disruptions caused by the bot.
+
+Use the bot at your own risk.
+
+7. Termination
+
+I reserve the right to:
+
+Suspend or ban users or servers that violate this ToS.
+
+Modify or discontinue the bot at any time without prior notice.
+
+8. Updates to the ToS
+
+I may update this ToS periodically. Continued use of the bot after updates signifies your acceptance of the revised terms.
+
+9. Contact Information
+
+For questions or concerns regarding this ToS, please contact me at pawluschristopher@gmail.com
+
