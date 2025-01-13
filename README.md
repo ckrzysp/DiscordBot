@@ -1,4 +1,4 @@
-# DiscordBot
+# DiscordDJ
 
 Hello! 
 
